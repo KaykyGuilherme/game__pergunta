@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/estilo/style.css">
+    <link rel="stylesheet" href="src/estilo/media.css">
+    <script src="src/js/script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="logar">
+        <h1>Qual é o nome do jogador?</h1>
+        <span class="logar__avisos"></span>
+        <form>
+            <input type="text" id="PlayerName" placeholder="Digite o seu nome">
+            <button>enviar</button>
+        </form>
+    </section>
+
+    <section class="game">
+        <header>
+            <h2>Olá, <span class="nome__do__jogador"></span></h2>
+            <button>sair</button>
+        </header>
+        <div class="dicas">
+            <h2>dicas</h2>
+            <ol class="dicas__list">
+                <li class="dicas__item">
+                    click
+                </li>
+                <li class="dicas__item">
+                    mousemouve
+                </li>
+                <li class="dicas__item">
+                    submit
+                </li>
+            </ol>
+        </div>
+        <div class="container__game__tela">
+            <h2>Vamos começar?</h2>
+            <span class="avisos__2">ERROU</span>
+            <div class="game__tela">
+                <button class="game__play">play</button>
+
+                <form class="game__active">
+                    <input type="text" id="tentaTiva" placeholder="Qual é a respota?" autocomplete="off">
+                    <button>enviar</button>
+                <form/>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

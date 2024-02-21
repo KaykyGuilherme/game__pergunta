@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Silkscreen:wght@400;700&display=swap');
+
+*{
+    margin: 0; padding: 0;
+    font-family: 'Anton', sans-serif;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+
+:root{
+    --black__1: #222;
+    --black__2: #111;
+    --black__3: black;
+
+    --white__1: #eee;
+    --white__2: white;
+}
+
+.logar{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(var(--black__1), var(--black__2));
+    display: flex;
+    flex-flow: column;
+    align-items: center; justify-content: center;
+    position: absolute;
+    bottom: 0;
+    transition: .4s;
+    z-index: 99;
+}
+
+.logar h1{
+    color: #eee;
+    font-size: 4rem;
+}
+
+.logar span{
+    font-size: 2rem;
+    margin: 1rem;
+    text-transform: uppercase;
+}
+
+.logar form{
+    width: 50%;
+    display: flex;
+}
+
+.logar form input{
+    width: 80%;
+    padding: .3rem 2rem;
+}
+
+.logar form button{
+    width: 20%;
+    height: 100%;
+}
+
+.game{
+    padding-top: 5rem;
+    background: 
+    url(../img/wallapaper__1.gif)
+    no-repeat
+    center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center; justify-content: center;
+    gap: 1rem;
+    flex-flow: column;
+}
+
+header{
+    top: 0; left: 0;
+    position: fixed;
+    width: 100%;
+    background: var(--black__2);
+    display: flex;
+    align-items: center; justify-content: space-around;
+    padding: 1rem .3rem;
+    border: 1px solid yellow;
+}
+
+header h2{
+    color: yellow;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+}
+
+header button{
+    height: 3rem; width: 3rem;
+    background: none;
+    border: 1px solid yellow;
+    color: yellow;
+}
+
+.dicas{
+    background: black;
+    height: 30rem; width: 15rem;
+    padding: 1rem;
+    border: 1px solid rgb(255, 0, 221);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.dicas h2{
+    color: rgb(255, 0, 221);
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.dicas__list{
+    color: rgb(255, 0, 221);
+    font-size: 2rem;
+}
+
+.container__game__tela{
+    width: 55%;
+}
+
+.container__game__tela h2{
+    color: rgb(0, 255, 136);
+    text-align: center;
+    text-shadow: .2rem .2rem black;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.avisos__2{
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: red;
+    text-shadow: .2rem .2rem black;
+    font-size: 3rem;
+    display: none;
+    text-transform: uppercase;
+}
+
+
+.game__tela{
+    height: 30rem;
+    width: 100%;
+    padding: 1rem;
+    background: var(--black__3);
+    border: 1px solid rgb(0, 255, 136);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.game__play{
+    width: 10rem;
+    margin: 0 auto;
+    background: rgb(0, 255, 136);
+    border: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    transition: .2s;
+}
+
+.game__play:hover{
+    background: transparent;
+    text-shadow: 1px 0 rgb(0, 255, 136),
+                -1px 0 rgb(0, 255, 136),
+                 0   1px rgb(0, 255, 136),  
+                 0  -1px rgb(0, 255, 136);
+    border-color: rgb(0, 255, 136);
+}
+
+.game__active{
+    display: none;
+    width: 100%;
+    display: none;
+    align-items: center; justify-content: center;
+}
+
+.game__active input{
+    background: transparent;
+    width: 80%;
+    padding: .5rem;
+    border: 1px solid rgb(0, 255, 136);
+    color: rgb(0, 255, 136);
+    font-size: 1.2rem;
+}
+
+.game__active input::placeholder{
+    color: rgb(0, 255, 136);
+}
+
+.game__active button{
+    width: 20%;
+    background: none;
+    border: 1px solid rgb(0, 255, 136);
+    color: rgb(0, 255, 136);
+    padding: .5rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.game__active button:hover{
+    background: rgb(0, 255, 136);
+    color: var(--black__3);
+}
